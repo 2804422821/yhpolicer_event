@@ -1,8 +1,8 @@
 from django.shortcuts import render
 
 # Create your views here.
-from app_monitor.models import MonitorManage
-from app_monitor.serializer import MonitorManageSerializer
+from apps.infrastructure.app_monitor.models import MonitorManage
+from apps.infrastructure.app_monitor.serializer import MonitorManageSerializer
 from utils.json_response import DetailResponse
 from utils.server.system import system
 from utils.viewset import CustomModelViewSet

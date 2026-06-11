@@ -3,7 +3,7 @@
 """
 import django_filters
 
-from app_personal_died.models import PersonalDied
+from apps.business.personnel.app_personal_died.models import PersonalDied
 
 
 class PersonalDiedFilter(django_filters.FilterSet):

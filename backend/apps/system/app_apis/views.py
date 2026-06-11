@@ -9,8 +9,8 @@ Describe:
 from django.core.cache import cache
 from django.db import transaction
 
-from app_apis.models import APIS
-from app_apis.serializers import ApiSerializer
+from apps.system.app_apis.models import APIS
+from apps.system.app_apis.serializers import ApiSerializer
 from utils.json_response import DetailResponse
 from utils.viewset import CustomModelViewSet
 

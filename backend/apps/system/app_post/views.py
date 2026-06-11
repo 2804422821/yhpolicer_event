@@ -4,8 +4,8 @@ from django.http import HttpResponse
 
 # Create your views here.
 
-from app_post.models import Post
-from app_post.serializers import PostSerializers, PostResource
+from apps.system.app_post.models import Post
+from apps.system.app_post.serializers import PostSerializers, PostResource
 from utils.json_response import DetailResponse
 from utils.viewset import CustomModelViewSet
 

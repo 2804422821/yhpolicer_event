@@ -4,7 +4,7 @@
 from django.urls import path, include
 from rest_framework import routers
 
-from app_reference.views import ReviewBasisViewSet
+from apps.business.app_reference.views import ReviewBasisViewSet
 
 router = routers.SimpleRouter()
 router.register(r"review-basis", ReviewBasisViewSet)

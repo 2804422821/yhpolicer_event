@@ -7,7 +7,7 @@ Describe:
 """
 from rest_framework import serializers
 
-from app_dict.models import DictData, DictType
+from apps.system.app_dict.models import DictData, DictType
 from utils.serializers import CustomModelSerializer
 from utils.validator import CustomUniqueValidator
 

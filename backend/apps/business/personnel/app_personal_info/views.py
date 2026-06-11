@@ -6,9 +6,9 @@ from django.http import HttpResponse
 from django.utils import timezone
 from rest_framework.decorators import action
 
-from app_personal_info.filters import PersonalInfoFilter
-from app_personal_info.models import PersonalInfo
-from app_personal_info.serializers import (
+from apps.business.personnel.app_personal_info.filters import PersonalInfoFilter
+from apps.business.personnel.app_personal_info.models import PersonalInfo
+from apps.business.personnel.app_personal_info.serializers import (
     PersonalInfoSerializer,
     PersonalInfoCreateSerializer,
     PersonalInfoUpdateSerializer,

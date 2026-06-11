@@ -6,11 +6,11 @@ from django.http import HttpResponse
 from django.utils import timezone
 from rest_framework.decorators import action
 
-from app_personal_info.models import PersonalInfo
-from app_personal_info.serializers import PersonalInfoSerializer
-from app_personal_sacrifice.filters import PersonalSacrificeFilter
-from app_personal_sacrifice.models import PersonalSacrifice
-from app_personal_sacrifice.serializers import (
+from apps.business.personnel.app_personal_info.models import PersonalInfo
+from apps.business.personnel.app_personal_info.serializers import PersonalInfoSerializer
+from apps.business.personnel.app_personal_sacrifice.filters import PersonalSacrificeFilter
+from apps.business.personnel.app_personal_sacrifice.models import PersonalSacrifice
+from apps.business.personnel.app_personal_sacrifice.serializers import (
     PersonalSacrificeSerializer,
     PersonalSacrificeCreateSerializer,
     PersonalSacrificeUpdateSerializer,

@@ -15,7 +15,7 @@ from channels.generic.websocket import AsyncJsonWebsocketConsumer, AsyncWebsocke
 from channels.layers import get_channel_layer
 from jwt import InvalidSignatureError
 
-from app_message.models import MessageCenterTargetUser, MessageCenter
+from apps.infrastructure.app_message.models import MessageCenterTargetUser, MessageCenter
 from application import settings
 
 send_dict = {}

@@ -9,11 +9,11 @@ Describe:
 from django.urls import path, re_path
 from rest_framework import routers
 
-from app_crontab.views.celery_clocked_schedule import ClockedScheduleModelViewSet
-from app_crontab.views.celery_interval_schedule import IntervalScheduleModelViewSet
-from app_crontab.views.celery_crontab_schedule import CrontabScheduleModelViewSet
-from app_crontab.views.celery_periodic_task import PeriodicTaskModelViewSet
-from app_crontab.views.celery_task_result import CeleryTaskResultViewSet
+from apps.infrastructure.app_crontab.views.celery_clocked_schedule import ClockedScheduleModelViewSet
+from apps.infrastructure.app_crontab.views.celery_interval_schedule import IntervalScheduleModelViewSet
+from apps.infrastructure.app_crontab.views.celery_crontab_schedule import CrontabScheduleModelViewSet
+from apps.infrastructure.app_crontab.views.celery_periodic_task import PeriodicTaskModelViewSet
+from apps.infrastructure.app_crontab.views.celery_task_result import CeleryTaskResultViewSet
 
 system_url = routers.SimpleRouter()
 

@@ -3,8 +3,8 @@ from django.http import HttpResponse
 from django.utils import timezone
 from rest_framework.decorators import action
 
-from app_reference.models import ReviewBasis
-from app_reference.serializers import (
+from apps.business.app_reference.models import ReviewBasis
+from apps.business.app_reference.serializers import (
     ReviewBasisSerializer,
     ReviewBasisCreateUpdateSerializer,
     ReviewBasisResource,

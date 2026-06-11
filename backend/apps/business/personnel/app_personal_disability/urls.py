@@ -1,6 +1,6 @@
 from rest_framework import routers
 from django.urls import path, include
-from app_personal_disability.views import PersonalDisabilityViewSet
+from apps.business.personnel.app_personal_disability.views import PersonalDisabilityViewSet
 
 router = routers.SimpleRouter()
 router.register(r'disability', PersonalDisabilityViewSet)

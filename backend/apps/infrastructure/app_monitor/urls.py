@@ -8,7 +8,7 @@ Describe:
 from django.urls import path
 from rest_framework import routers
 
-from app_monitor.views import MonitorManageViewSet
+from apps.infrastructure.app_monitor.views import MonitorManageViewSet
 
 system_url = routers.SimpleRouter()
 system_url.register(r'monitor', MonitorManageViewSet)

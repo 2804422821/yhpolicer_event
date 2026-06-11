@@ -3,7 +3,7 @@
 """
 import django_filters
 
-from app_personal_info.models import PersonalInfo
+from apps.business.personnel.app_personal_info.models import PersonalInfo
 
 
 class PersonalInfoFilter(django_filters.FilterSet):

@@ -7,7 +7,7 @@ Describe:
 """
 import django_filters
 
-from app_operation_log.models import OperationLog
+from apps.infrastructure.app_operation_log.models import OperationLog
 
 
 class OperationLogTimeFilter(django_filters.rest_framework.FilterSet):

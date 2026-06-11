@@ -8,7 +8,7 @@ Describe:
 from django.urls import re_path
 from rest_framework import routers
 
-from app_operation_log.views import OperationLogViewSet
+from apps.infrastructure.app_operation_log.views import OperationLogViewSet
 
 system_url = routers.SimpleRouter()
 system_url.register(r'operation-log', OperationLogViewSet)

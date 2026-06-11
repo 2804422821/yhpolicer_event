@@ -4,7 +4,7 @@
 from import_export import resources
 from import_export.fields import Field
 
-from app_personal_info.models import PersonalInfo
+from apps.business.personnel.app_personal_info.models import PersonalInfo
 from utils.serializers import CustomModelSerializer
 
 

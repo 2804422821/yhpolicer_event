@@ -2,9 +2,9 @@
 import os
 import subprocess
 import platform
-from app_operation_log.filters import OperationLogTimeFilter
-from app_operation_log.models import OperationLog
-from app_operation_log.serializers import OperationLogSerializer
+from apps.infrastructure.app_operation_log.filters import OperationLogTimeFilter
+from apps.infrastructure.app_operation_log.models import OperationLog
+from apps.infrastructure.app_operation_log.serializers import OperationLogSerializer
 from application.settings import BASE_DIR
 from utils.json_response import ErrorResponse, DetailResponse
 from utils.viewset import CustomModelViewSet

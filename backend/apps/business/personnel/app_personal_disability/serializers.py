@@ -4,8 +4,8 @@
 from import_export import resources
 from import_export.fields import Field
 
-from app_personal_info.models import PersonalInfo
-from app_personal_disability.models import PersonalDisability
+from apps.business.personnel.app_personal_info.models import PersonalInfo
+from apps.business.personnel.app_personal_disability.models import PersonalDisability
 from utils.serializers import CustomModelSerializer
 from rest_framework import serializers
 

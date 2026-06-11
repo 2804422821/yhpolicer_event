@@ -5,7 +5,7 @@ Version:  V 0.1
 File:     serializer
 Describe: 
 """
-from app_monitor.models import MonitorManage
+from apps.infrastructure.app_monitor.models import MonitorManage
 from utils.serializers import CustomModelSerializer
 
 

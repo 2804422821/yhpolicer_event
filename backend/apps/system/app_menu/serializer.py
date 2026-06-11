@@ -7,7 +7,7 @@ Describe:
 """
 from rest_framework import serializers
 
-from app_menu.models import Menu
+from apps.system.app_menu.models import Menu
 from utils.serializers import CustomModelSerializer
 
 

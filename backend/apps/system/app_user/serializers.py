@@ -11,10 +11,10 @@ from import_export import resources
 from import_export.widgets import ManyToManyWidget, ForeignKeyWidget
 from django.contrib.auth.hashers import make_password
 from rest_framework import serializers
-from app_post.models import Post
-from app_role.models import Role
-from app_dept.models import Dept
-from app_user.models import Users
+from apps.system.app_post.models import Post
+from apps.system.app_role.models import Role
+from apps.system.app_dept.models import Dept
+from apps.system.app_user.models import Users
 from utils.common import REGEX_MOBILE
 from utils.serializers import CustomModelSerializer
 from utils.validator import CustomUniqueValidator, CustomValidationError

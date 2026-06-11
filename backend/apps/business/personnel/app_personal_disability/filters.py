@@ -3,7 +3,7 @@
 """
 import django_filters
 
-from app_personal_disability.models import PersonalDisability
+from apps.business.personnel.app_personal_disability.models import PersonalDisability
 
 
 class PersonalDisabilityFilter(django_filters.FilterSet):

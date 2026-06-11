@@ -6,11 +6,11 @@ from django.http import HttpResponse
 from django.utils import timezone
 from rest_framework.decorators import action
 
-from app_personal_info.models import PersonalInfo
-from app_personal_info.serializers import PersonalInfoSerializer
-from app_personal_disability.filters import PersonalDisabilityFilter
-from app_personal_disability.models import PersonalDisability
-from app_personal_disability.serializers import (
+from apps.business.personnel.app_personal_info.models import PersonalInfo
+from apps.business.personnel.app_personal_info.serializers import PersonalInfoSerializer
+from apps.business.personnel.app_personal_disability.filters import PersonalDisabilityFilter
+from apps.business.personnel.app_personal_disability.models import PersonalDisability
+from apps.business.personnel.app_personal_disability.serializers import (
     PersonalDisabilitySerializer,
     PersonalDisabilityCreateSerializer,
     PersonalDisabilityUpdateSerializer,

@@ -6,10 +6,10 @@ from django.utils import timezone
 from rest_framework.decorators import action
 from rest_framework.permissions import IsAuthenticated
 
-from app_menu.models import Menu
-from app_menu.serializer import  MenuSerializer
-from app_user.models import Users
-from app_user.serializers import UserSerializer, UserCreateSerializer, UserInfoUpdateSerializer, UserResource
+from apps.system.app_menu.models import Menu
+from apps.system.app_menu.serializer import  MenuSerializer
+from apps.system.app_user.models import Users
+from apps.system.app_user.serializers import UserSerializer, UserCreateSerializer, UserInfoUpdateSerializer, UserResource
 from utils.json_response import DetailResponse, ErrorResponse
 from utils.viewset import CustomModelViewSet
 

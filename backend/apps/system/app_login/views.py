@@ -13,7 +13,7 @@ from captcha.views import CaptchaStore, captcha_image
 from rest_framework.views import APIView
 from rest_framework_simplejwt.views import TokenObtainPairView
 
-from app_login.serializer import LoginSerializer
+from apps.system.app_login.serializer import LoginSerializer
 from utils.json_response import DetailResponse
 
 

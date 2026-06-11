@@ -14,7 +14,7 @@ from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 from django.utils.translation import gettext_lazy as _
 from rest_framework_simplejwt.tokens import RefreshToken
 
-from app_user.models import Users
+from apps.system.app_user.models import Users
 from application import settings
 from application.settings import IS_SINGLE_TOKEN
 from utils.validator import CustomValidationError

@@ -8,7 +8,7 @@ Describe:
 from django.urls import path
 from rest_framework import routers
 
-from app_user.views import UserViewSet
+from apps.system.app_user.views import UserViewSet
 
 system_url = routers.SimpleRouter()
 system_url.register(r'user', UserViewSet)

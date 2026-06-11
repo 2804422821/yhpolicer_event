@@ -6,7 +6,7 @@ File:     serializers
 Describe: 
 """
 
-from app_operation_log.models import OperationLog
+from apps.infrastructure.app_operation_log.models import OperationLog
 from utils.serializers import CustomModelSerializer
 
 

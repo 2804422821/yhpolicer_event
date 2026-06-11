@@ -7,9 +7,9 @@ Describe: 信息中心数据序列化
 """
 from rest_framework import serializers
 from django_restql.fields import DynamicSerializerMethodField
-from app_message.models import MessageCenter
-from app_message.models import MessageCenterTargetUser
-from app_user.models import Users
+from apps.infrastructure.app_message.models import MessageCenter
+from apps.infrastructure.app_message.models import MessageCenterTargetUser
+from apps.system.app_user.models import Users
 from application.websocketConfig import websocket_push
 from utils.serializers import CustomModelSerializer
 
@@ -27,7 +27,7 @@ class MessageCenterSerializer(CustomModelSerializer):
         roles = instance.target_role.all()
         # You can do what ever you want in here
         # `parsed_query` param is passed to BookSerializer to allow further querying
-        from app_role.serializers import RoleSerializer
+        from apps.system.app_role.serializers import RoleSerializer
         serializer = RoleSerializer(
             roles,
             many=True,
@@ -39,7 +39,7 @@ class MessageCenterSerializer(CustomModelSerializer):
         users = instance.target_user.all()
         # You can do what ever you want in here
         # `parsed_query` param is passed to BookSerializer to allow further querying
-        from app_user.serializers import UserSerializer
+        from apps.system.app_user.serializers import UserSerializer
         serializer = UserSerializer(
             users,
             many=True,
@@ -51,7 +51,7 @@ class MessageCenterSerializer(CustomModelSerializer):
         dept = instance.target_dept.all()
         # You can do what ever you want in here
         # `parsed_query` param is passed to BookSerializer to allow further querying
-        from app_dept.serializers import DeptSerializer
+        from apps.system.app_dept.serializers import DeptSerializer
         serializer = DeptSerializer(
             dept,
             many=True,

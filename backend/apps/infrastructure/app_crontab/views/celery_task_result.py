@@ -7,7 +7,7 @@ Describe:
 """
 from django_celery_results.models import TaskResult
 
-from app_crontab.filters import CeleryTaskResultFilterSet
+from apps.infrastructure.app_crontab.filters import CeleryTaskResultFilterSet
 from utils.serializers import CustomModelSerializer
 from utils.viewset import CustomModelViewSet
 

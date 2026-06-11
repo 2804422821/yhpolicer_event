@@ -6,7 +6,7 @@ File:     serializers
 Describe:
 """
 
-from app_apis.models import APIS
+from apps.system.app_apis.models import APIS
 from utils.serializers import CustomModelSerializer
 
 

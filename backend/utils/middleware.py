@@ -14,7 +14,7 @@ from django.utils.deprecation import MiddlewareMixin
 from django_redis import get_redis_connection
 from rest_framework_simplejwt.authentication import JWTTokenUserAuthentication
 
-from app_operation_log.models import OperationLog
+from apps.infrastructure.app_operation_log.models import OperationLog
 from application.settings import IS_SINGLE_TOKEN
 from utils.request_util import get_request_ip, get_request_data, get_request_path, get_request_user, get_os, get_browser, get_verbose_name
 

@@ -8,9 +8,9 @@ Describe:
 from rest_framework import serializers
 from casbin_adapter.enforcer import enforcer
 
-from app_dept.models import Dept
-from app_menu.models import Menu
-from app_role.models import Role
+from apps.system.app_dept.models import Dept
+from apps.system.app_menu.models import Menu
+from apps.system.app_role.models import Role
 from utils.serializers import CustomModelSerializer
 
 

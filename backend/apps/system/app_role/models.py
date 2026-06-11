@@ -1,8 +1,8 @@
 
 # Create your models here.
 from django.db import models
-from app_dept.models import Dept
-from app_menu.models import Menu
+from apps.system.app_dept.models import Dept
+from apps.system.app_menu.models import Menu
 from utils.models import BaseModel, table_prefix
 
 class Role(BaseModel):

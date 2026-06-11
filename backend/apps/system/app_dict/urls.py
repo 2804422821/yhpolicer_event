@@ -7,7 +7,7 @@ Describe:
 """
 from rest_framework import routers
 
-from app_dict.views import DictDataViewSet, DictTypeViewSet
+from apps.system.app_dict.views import DictDataViewSet, DictTypeViewSet
 
 system_url = routers.SimpleRouter()
 system_url.register(r'dict-type', DictTypeViewSet)

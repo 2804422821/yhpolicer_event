@@ -3,7 +3,7 @@
 """
 import django_filters
 
-from app_personal_sacrifice.models import PersonalSacrifice
+from apps.business.personnel.app_personal_sacrifice.models import PersonalSacrifice
 
 
 class PersonalSacrificeFilter(django_filters.FilterSet):

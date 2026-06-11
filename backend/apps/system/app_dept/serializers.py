@@ -7,7 +7,7 @@ Describe:
 """
 from rest_framework import serializers
 
-from app_dept.models import Dept
+from apps.system.app_dept.models import Dept
 from utils.serializers import CustomModelSerializer
 from utils.validator import CustomUniqueValidator
 

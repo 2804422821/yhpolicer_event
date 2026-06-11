@@ -12,9 +12,9 @@ from django_celery_beat.models import PeriodicTask, CrontabSchedule, cronexp, Pe
 from django_celery_results.models import TaskResult
 from rest_framework import serializers
 
-from app_crontab.filters import CeleryPeriodicTaskFilterSet
-from app_crontab.views.celery_crontab_schedule import CrontabScheduleSerializer
-from app_crontab.views.celery_interval_schedule import IntervalScheduleSerializer
+from apps.infrastructure.app_crontab.filters import CeleryPeriodicTaskFilterSet
+from apps.infrastructure.app_crontab.views.celery_crontab_schedule import CrontabScheduleSerializer
+from apps.infrastructure.app_crontab.views.celery_interval_schedule import IntervalScheduleSerializer
 from application import settings
 from utils.common import get_parameter_dic
 from utils.exception import APIException

@@ -8,7 +8,7 @@ Describe:
 from django.urls import re_path
 from rest_framework import routers
 
-from app_apis.views import ApisViewSet
+from apps.system.app_apis.views import ApisViewSet
 
 system_url = routers.SimpleRouter()
 system_url.register(r'apis', ApisViewSet)

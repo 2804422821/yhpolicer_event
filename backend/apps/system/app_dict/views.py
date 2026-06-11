@@ -8,8 +8,8 @@ Describe:
 from django.db import transaction
 
 # Create your views here.
-from app_dict.models import DictType, DictData
-from app_dict.serializers import DictTypeSerializer, DictDataSerializer, DictTypeCreateSerializer
+from apps.system.app_dict.models import DictType, DictData
+from apps.system.app_dict.serializers import DictTypeSerializer, DictDataSerializer, DictTypeCreateSerializer
 from utils.json_response import DetailResponse, ErrorResponse
 from utils.viewset import CustomModelViewSet
 

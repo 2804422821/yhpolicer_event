@@ -4,7 +4,7 @@
 from import_export import resources
 from import_export.fields import Field
 
-from app_reference.models import ReviewBasis
+from apps.business.app_reference.models import ReviewBasis
 from utils.serializers import CustomModelSerializer
 
 

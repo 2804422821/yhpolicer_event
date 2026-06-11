@@ -1,7 +1,7 @@
 
 # Create your views here.
-from app_dept.models import Dept
-from app_dept.serializers import DeptSerializer, DeptTreeSerializer, DeptCreateUpdateSerializer
+from apps.system.app_dept.models import Dept
+from apps.system.app_dept.serializers import DeptSerializer, DeptTreeSerializer, DeptCreateUpdateSerializer
 from utils.json_response import DetailResponse
 from utils.viewset import CustomModelViewSet
 

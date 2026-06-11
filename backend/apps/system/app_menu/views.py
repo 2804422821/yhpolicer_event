@@ -1,7 +1,7 @@
 from django.db.models import F
 
-from app_menu.models import Menu
-from app_menu.serializer import MenuSerializer, MenuTreeSerializer
+from apps.system.app_menu.models import Menu
+from apps.system.app_menu.serializer import MenuSerializer, MenuTreeSerializer
 from utils.json_response import SuccessResponse, DetailResponse
 from utils.viewset import CustomModelViewSet
 

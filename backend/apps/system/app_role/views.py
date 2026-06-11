@@ -3,8 +3,8 @@
 from casbin_adapter.enforcer import enforcer
 from django.db import transaction
 
-from app_role.models import Role
-from app_role.serializers import RoleSerializer, RoleCreateSerializer
+from apps.system.app_role.models import Role
+from apps.system.app_role.serializers import RoleSerializer, RoleCreateSerializer
 from utils.json_response import DetailResponse, ErrorResponse
 from utils.viewset import CustomModelViewSet
 

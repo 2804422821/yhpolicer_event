@@ -8,7 +8,7 @@ Describe:
 from django.urls import re_path
 from rest_framework import routers
 
-from app_dept.views import DeptViewSet
+from apps.system.app_dept.views import DeptViewSet
 
 system_url = routers.SimpleRouter()
 system_url.register(r'dept', DeptViewSet)

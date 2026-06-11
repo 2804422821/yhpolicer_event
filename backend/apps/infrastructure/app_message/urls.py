@@ -8,7 +8,7 @@ Describe:
 from django.urls import re_path
 from rest_framework import routers
 
-from app_message.views import MessageCenterViewSet
+from apps.infrastructure.app_message.views import MessageCenterViewSet
 
 system_url = routers.SimpleRouter()
 system_url.register(r'message-center', MessageCenterViewSet)

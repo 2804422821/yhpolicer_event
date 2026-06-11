@@ -1,6 +1,6 @@
 # Create your views here.
-from app_message.models import MessageCenter, MessageCenterTargetUser
-from app_message.serializer import MessageCenterSerializer, MessageCenterCreateSerializer, MessageCenterTargetUserListSerializer
+from apps.infrastructure.app_message.models import MessageCenter, MessageCenterTargetUser
+from apps.infrastructure.app_message.serializer import MessageCenterSerializer, MessageCenterCreateSerializer, MessageCenterTargetUserListSerializer
 from application.websocketConfig import websocket_push
 from utils.json_response import DetailResponse, SuccessResponse
 from utils.viewset import CustomModelViewSet

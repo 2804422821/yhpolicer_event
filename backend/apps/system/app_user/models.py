@@ -4,9 +4,9 @@ from django.contrib.auth.models import AbstractUser
 from django.db import models
 
 # Create your models here.
-from app_post.models import Post
-from app_role.models import Role
-from app_dept.models import Dept
+from apps.system.app_post.models import Post
+from apps.system.app_role.models import Role
+from apps.system.app_dept.models import Dept
 from utils.models import BaseModel, table_prefix
 
 

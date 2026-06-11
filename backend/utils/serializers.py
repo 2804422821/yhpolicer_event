@@ -10,7 +10,7 @@ from rest_framework.fields import empty
 from rest_framework.request import Request
 from rest_framework.serializers import ModelSerializer
 
-from app_user.models import Users
+from apps.system.app_user.models import Users
 
 
 class CustomModelSerializer(ModelSerializer):
