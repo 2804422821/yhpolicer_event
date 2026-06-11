@@ -3,4 +3,4 @@ from django.apps import AppConfig
 
 class AppExampleConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'app_personal_info'
+    name = 'apps.business.personnel.app_personal_info'

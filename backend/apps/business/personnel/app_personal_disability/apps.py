@@ -3,4 +3,4 @@ from django.apps import AppConfig
 
 class AppPersonalDisabilityConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'app_personal_disability'
+    name = 'apps.business.personnel.app_personal_disability'

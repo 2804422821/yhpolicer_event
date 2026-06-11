@@ -3,4 +3,4 @@ from django.apps import AppConfig
 
 class AppRoleConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'app_role'
+    name = 'apps.system.app_role'

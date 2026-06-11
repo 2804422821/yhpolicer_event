@@ -3,4 +3,4 @@ from django.apps import AppConfig
 
 class AppPostConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'app_post'
+    name = 'apps.system.app_post'
