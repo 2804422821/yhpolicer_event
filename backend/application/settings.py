@@ -60,20 +60,26 @@ INSTALLED_APPS = [
     'captcha',  # 验证码
     'channels',  # django通过其实现websocket
     'casbin_adapter',  # api权限
-    'app_post',  # 系统-岗位
-    'app_dept',  # 系统-部门
-    'app_menu',  # 系统-菜单
-    'app_apis',  # 系统-API
-    'app_role',  # 系统-角色
-    'app_user',  # 系统-用户
-    'app_login',  # 系统-登录
-    'app_dict',  # 系统-字典
-    'app_crontab',  # celery定时任务
-    'app_monitor',  # 任务监控
-    'app_operation_log',  # 操作日志
-    'app_message',  # 信息中心
+    'apps.system.app_post',  # 系统-岗位
+    'apps.system.app_dept',  # 系统-部门
+    'apps.system.app_menu',  # 系统-菜单
+    'apps.system.app_apis',  # 系统-API
+    'apps.system.app_role',  # 系统-角色
+    'apps.system.app_user',  # 系统-用户
+    'apps.system.app_login',  # 系统-登录
+    'apps.system.app_dict',  # 系统-字典
+    'apps.infrastructure.app_crontab',  # celery定时任务
+    'apps.infrastructure.app_monitor',  # 任务监控
+    'apps.infrastructure.app_operation_log',  # 操作日志
+    'apps.infrastructure.app_message',  # 信息中心
     'app_example',  # 测试样例
-    'app_init'  # 数据初始化
+    'apps.system.app_init',  # 数据初始化
+    'apps.business.app_reference',  # 执法管理-案件质量-评查依据
+    'apps.business.app_pension_policy',  # 优抚一件事-政策
+    'apps.business.personnel.app_personal_info',  # 优抚一件事-人员管理-基本信息
+    'apps.business.personnel.app_personal_died',  # 优抚一件事-人员管理-病故人员
+    'apps.business.personnel.app_personal_sacrifice',  # 优抚一件事-人员管理-因公牺牲人员
+    'apps.business.personnel.app_personal_disability',  # 优抚一件事-人员管理-伤残人员
 ]
 
 MIDDLEWARE = [
@@ -143,7 +149,7 @@ DATABASES = {
         }
     }
 }
-AUTH_USER_MODEL = "app_user.Users"
+AUTH_USER_MODEL = "apps.system.app_user.Users"
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators

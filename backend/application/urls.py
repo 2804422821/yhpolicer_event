@@ -17,22 +17,27 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-from app_login.views import CaptchaView, LoginView
+from apps.system.app_login.views import CaptchaView, LoginView
 
 urlpatterns = [
     path('getCaptcha/', CaptchaView.as_view()),
     path("login/", LoginView.as_view(), name="token_obtain_pair"),
     path('admin/', admin.site.urls),
-    path('system/', include('app_post.urls')),
-    path('system/', include('app_dept.urls')),
-    path('system/', include('app_apis.urls')),
-    path('system/', include('app_menu.urls')),
-    path('system/', include('app_role.urls')),
-    path('system/', include('app_dict.urls')),
-    path('system/', include('app_user.urls')),
-    path('system/', include('app_operation_log.urls')),
-    path('system/', include('app_message.urls')),
+    path('system/', include('apps.system.app_post.urls')),
+    path('system/', include('apps.system.app_dept.urls')),
+    path('system/', include('apps.system.app_apis.urls')),
+    path('system/', include('apps.system.app_menu.urls')),
+    path('system/', include('apps.system.app_role.urls')),
+    path('system/', include('apps.system.app_dict.urls')),
+    path('system/', include('apps.system.app_user.urls')),
+    path('system/', include('apps.infrastructure.app_operation_log.urls')),
+    path('system/', include('apps.infrastructure.app_message.urls')),
     path('system/', include('app_example.urls')),
-    path('job/crontab/', include('app_crontab.urls')),
-    path('tool/', include('app_monitor.urls')),
+    path('enforcement/case-quality/', include('apps.business.app_reference.urls')),
+    path('pension/people/', include('apps.business.personnel.app_personal_info.urls')),
+    path('pension/people/', include('apps.business.personnel.app_personal_died.urls')),
+    path('pension/people/', include('apps.business.personnel.app_personal_sacrifice.urls')),
+    path('pension/people/', include('apps.business.personnel.app_personal_disability.urls')),
+    path('job/crontab/', include('apps.infrastructure.app_crontab.urls')),
+    path('tool/', include('apps.infrastructure.app_monitor.urls')),
 ]
