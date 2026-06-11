@@ -18,7 +18,7 @@ class Command(BaseCommand):
     help = 'Initializes the project data.'
 
     def handle(self, *args, **options):
-        path_file = os.path.join(BASE_DIR, "app_init", "management", "commands")
+        path_file = os.path.join(BASE_DIR, "apps", "system", "app_init", "management", "commands")
         files = os.listdir(path_file)
         for file in files:
             # 判断文件是否为 JSON 文件
